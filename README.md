@@ -1,6 +1,10 @@
-Issues where if you have manifests installing CRDs and also using those CRDs skaffold run and dev fail.
+Reproduction repo for skaffold where if you have manifests installing CRDs and also using those CRDs skaffold run and dev fail.
 
 A subsequent run will fix it because the app is partially deployed. But dev is unusable on this repo.
+
+This installs the Prometheus Operator and then tries to create a prometheus CRD.
+
+Report: https://github.com/GoogleContainerTools/skaffold/issues/4641#issuecomment-671089836
 
 
 ```
