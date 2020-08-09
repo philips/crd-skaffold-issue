@@ -1,0 +1,8 @@
+apiVersion: skaffold/v2beta5
+kind: Config
+metadata:
+  name: crd-skaffold-issue
+deploy:
+  kubectl:
+    manifests:
+    - kubernetes/*.yaml
