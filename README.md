@@ -1,3 +1,8 @@
+Illustration of issues where if you have manifests installing CRDs and also using those CRDs skaffold run can fail.
+
+
+```
+$ skaffold run
 Generating tags...
 Checking cache...
 Tags used in deployment:
@@ -18,3 +23,4 @@ Starting deploy...
  - serviceaccount/prometheus created
  - Error from server (NotFound): error when creating "STDIN": the server could not find the requested resource (post prometheuses.monitoring.coreos.com)
 kubectl apply: exit status 1
+```
